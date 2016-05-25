@@ -69,7 +69,7 @@ unsigned int getFactors(unsigned int n, bool* sieve) {
 				n /= i;	 // divide n by primes
 				occurance++;
 			}
-			if (occurance) divisors *= (occurance+1); // if occurance is DNE 0 we know there are primes
+			if (occurance) divisors *= (occurance+1); // if occurance DNE 0 we know there are primes
 		}
 	}
 	
