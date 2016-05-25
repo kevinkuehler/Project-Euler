@@ -28,7 +28,7 @@ a 15K text file containing a triangle with one-hundred rows.
 
 using namespace std; 
 
-#define R 100
+#define R 100 // triangle has 100 rows
 
 int main() {
 	vector< vector<int> > triangle;
