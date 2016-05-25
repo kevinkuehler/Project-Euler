@@ -84,7 +84,7 @@ int main()
 	while (getFactors(genTriangular(i), sieve) <= FACTORS) i++;
 	cout << genTriangular(i) << endl;
 
-	delete[] sieve;
+	delete [] sieve;
 	return 0;
 	
 }
