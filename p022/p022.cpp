@@ -47,15 +47,15 @@ int main() {
 /* 
 	Extracts a string between two delimiter strings (supports varying occurrence) 
 */
-vector<string> extract(const string& str, const string& delim, const string& delim2)
+vector<string> extract(const string& str, const string& delim1, const string& delim2)
 {
 	vector<string> tokens;
 	size_t start = 0, end = 0;
 
 	do {
-		start = str.find(delim, start);
+		start = str.find(delim1, start);
 		if (start == string::npos) break;
-		end = str.find(delim, start + 1);
+		end = str.find(delim1, start + 1);
 		string token = str.substr(start + 1, end - start - 1);
 		if (!token.empty()) tokens.push_back(token);
 		start = end + 1;
