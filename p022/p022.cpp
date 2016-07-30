@@ -25,8 +25,8 @@ What is the total of all the name scores in the file?
 
 using namespace std; 
 
-vector<string> extract(const string& str, const string& delim, const string& delim2);
-int sumstr(const string& s);
+vector<string> extract(const string&, const string&, const string&);
+int sumstr(const string&);
 
 int main() {
 	string filestr;
@@ -67,9 +67,9 @@ vector<string> extract(const string& str, const string& delim, const string& del
 	Converts a string of capital letters to the int value of their place 
 	in the alphabet. Returns the sum.
 */
-int sumstr(const string& s) {
+int sumstr(const string& str) {
 	int sum = 0;
-	for (char c : s) 
+	for (char c : str) 
 		sum += (int)c - 64;
 	return sum;
 }
