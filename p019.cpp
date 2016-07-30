@@ -52,8 +52,8 @@ int months[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 /*
 	Returns the days in each month, leap years accounted for. 
 */
-int getMonthLength(int m, int y) {
-	return (m == 2) ? months[m - 1] + isLeapYear(y) : months[m - 1];
+int getMonthLength(int month, int year) {
+	return (month == 2) ? months[month - 1] + isLeapYear(year) : months[month - 1];
 }
 
 /*
