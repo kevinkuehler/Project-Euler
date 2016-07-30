@@ -55,7 +55,7 @@ vector<string> extract(const string& str, const string& delim1, const string& de
 	do {
 		start = str.find(delim1, start);
 		if (start == string::npos) break;
-		end = str.find(delim1, start + 1);
+		end = str.find(delim2, start + 1);
 		string token = str.substr(start + 1, end - start - 1);
 		if (!token.empty()) tokens.push_back(token);
 		start = end + 1;
