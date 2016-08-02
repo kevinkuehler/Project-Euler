@@ -60,7 +60,6 @@ bool* sieveEratosthenes(unsigned int sievelen) {
 				primearr[j] = false;
 		}
 	}
-
 	return primearr;
 }
 /*
