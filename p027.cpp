@@ -23,7 +23,6 @@ bool* sieveEratosthenes(unsigned int sievelen);
 int quadratic(int, int, int);
 int consecutive_primes(int, int, bool*);
 
-
 int main() {
 	static const int N = 1000;
 
@@ -43,6 +42,7 @@ int main() {
 		}
 	} 
 	cout << max_a * max_b << endl;  
+	
 	return 0;
 }
 
