@@ -19,7 +19,7 @@ produces the maximum number of primes for consecutive values of n, starting with
 #include <iostream>
 using namespace std; 
 
-bool* sieveEratosthenes(unsigned int sievelen);
+bool* sieveEratosthenes(unsigned int);
 int quadratic(int, int, int);
 int consecutive_primes(int, int, bool*);
 
