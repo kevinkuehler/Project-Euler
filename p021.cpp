@@ -32,7 +32,7 @@ int main() {
 			if (!(amic % i)) 
 				propDivisorSum += i;
 
-		if (propDivisorSum < N) { // ignore n > 10k 
+		if (propDivisorSum < N) { // ignore n >= 10k 
 			if (amicable[propDivisorSum] == amic)
 				sum += propDivisorSum + amic;
 			amicable[amic] = propDivisorSum;
