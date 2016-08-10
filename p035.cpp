@@ -16,7 +16,6 @@ How many circular primes are there below one million?
 */
 #include <iostream>
 #include <math.h>
-#include <ctime>
 using namespace std;
 
 bool circular_prime(int);
@@ -33,7 +32,6 @@ int main() {
 		if (circular_prime(i)) count++;
 
 	cout << count << endl;
-
 	return 0;
 }
 /*
@@ -42,9 +40,9 @@ meaning all rotations of n's digits are prime.
 */
 bool circular_prime(int n) {
 	if (!sieve[n]) return false;
-	int digits = log10(n) + 1;
-	for (int i = 0; i < digits - 1; i++) {
-		n = b_10_rol(n, digits);
+	int r = log10(n); // n digits - 1
+	for (int i = 0; i < r; i++) {
+		n = b_10_rol(n, r);
 		if (!sieve[n]) return false;
 	}
 	return true;
@@ -53,8 +51,8 @@ bool circular_prime(int n) {
 Shifts a number n to the left once.
 Digit in highest dec place moves to ones place.
 */
-int b_10_rol(int n, int digits) {
-	int save = pow(10, digits - 1);
+int b_10_rol(int n, int e) {
+	int save = pow(10, e);
 	return (n % save) * 10 + n / save;
 }
 /*
