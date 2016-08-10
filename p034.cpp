@@ -34,7 +34,7 @@ Computes the sum of the factorial of a n's digits.
 n must have at least 2 digits
 */
 int fact_digit_sum(int n) {
-	long sum = 0;
+	int sum = 0;
 	do {
 		sum+= fact(n % 10);
 		n /= 10;
