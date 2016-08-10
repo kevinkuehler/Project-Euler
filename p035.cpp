@@ -16,9 +16,10 @@ How many circular primes are there below one million?
 */
 #include <iostream>
 #include <math.h>
+#include <ctime>
 using namespace std;
 
-bool circular_prime(int, int);
+bool circular_prime(int);
 int b_10_rol(int, int);
 bool* sieveEratosthenes(unsigned int);
 
@@ -27,23 +28,21 @@ int main() {
 	const static int N = 1000000;
 
 	int count = 13, s = 100, digits = 3; // given
-	do {
-		int digitrng = s * 10;
-		for (int i = s; i < digitrng; i++)
-			if (circular_prime(i, digits)) count++;
-		s *= 10;
-		digits++;
-	} while (s < N);
+	
+	for (int i = 100; i < N; i++) 
+		if (circular_prime(i)) count++;
 
 	cout << count << endl;
+
 	return 0;
 }
 /*
 Returns true if a n is circular prime,
 meaning all rotations of n's digits are prime.
 */
-bool circular_prime(int n, int digits) {
+bool circular_prime(int n) {
 	if (!sieve[n]) return false;
+	int digits = log10(n) + 1;
 	for (int i = 0; i < digits - 1; i++) {
 		n = b_10_rol(n, digits);
 		if (!sieve[n]) return false;
