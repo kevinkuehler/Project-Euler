@@ -68,7 +68,7 @@ mask_len must >= bits in v.
 int highest_bit(int n, int mask_len) {
 	int mask = 1 << mask_len;
 	for (int bitIndex = mask_len; bitIndex >= 0; bitIndex--) {
-		if ((n & mask) != 0) return bitIndex;
+		if (n & mask) return bitIndex;
 		mask >>= 1; 
 	}
 	return -1;
