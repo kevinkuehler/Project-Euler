@@ -49,7 +49,7 @@ bits in mask to 1. The bits in mask should equal
 the bits set by count.
 */
 bool is19Pandigital(unsigned int n) {
-	unsigned int mask, count;
+	int mask, count;
 	count = mask = 0;
 	while (n > 0) {
 		int check = mask;
