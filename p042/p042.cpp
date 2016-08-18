@@ -48,8 +48,8 @@ int main() {
 		end = filestr.find(delim, start + 1);
 		string token = filestr.substr(start + 1, end - start - 1);
 		if (!token.empty())
-            if(TRI(decode(token)))
-                count++;
+            		if(TRI(decode(token)))
+                		count++;
 		start = end + 1;
     } while (start < filestr.length() && end < filestr.length());
 
