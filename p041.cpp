@@ -18,8 +18,7 @@ using namespace std;
 bool is_prime(unsigned int);
 int vtoi(vector<char>&);
 int largest_prime_perm(vector<char>&);
-int main()
-{
+int main() {
     // init vector
     vector<char> pan;
     for(int i = 1; i <= 9; i++)
