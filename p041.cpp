@@ -67,9 +67,9 @@ int vtoi(vector<char>& v) {
 }
 
 /*
-Returns the largest prime permutation in the
-char vector p. If none of the permutations
-are prime -1 is returned.
+Returns the largest prime permutation, 
+as an int,  of the char vector p. 
+If none of the permutations are prime -1 is returned.
 */
 int largest_prime_perm(vector<char>& p) {
     int largest = -1;
