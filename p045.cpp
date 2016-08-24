@@ -18,8 +18,8 @@ Find the next triangle number that is also pentagonal and hexagonal.
 #include <iostream>
 #include <math.h>
 using namespace std;
-bool is_pent(unsigned long x);
-unsigned long gen_hex(unsigned long n);
+bool is_pent(unsigned long);
+unsigned long gen_hex(unsigned long);
 int main() {
     /*
     * We find our start index of 144 by using the fact that an index n of a
