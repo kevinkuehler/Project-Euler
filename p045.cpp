@@ -24,7 +24,7 @@ int main() {
     /*
     * We find our start index of 144 by using the fact that an index n of a
     * hexagonal number is given by n=( 1+sqrt(1+8h) ) / 4 for any value of h
-    * that returns an integer. We plug in 40755 and find that index is 143.
+    * that returns an integer. We plug in 40755 and get index 143.
     * We only check for hexagonal numbers that are also pentagonal since
     * every hexagonal number is an odd-numbered triangular number.
     */
