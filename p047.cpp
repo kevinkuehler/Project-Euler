@@ -51,7 +51,7 @@ This process repeats with sequential primes until limit is reached.
 */
 int* sieve_fact_cnt(unsigned int len) {
     int* countarr = new int[len + 1];
-	fill_n(countarr,len,0);
+    fill_n(countarr,len,0);
     for (int i = 2; i <= len; i++)
         if (!countarr[i])
             for (int j = i; j <= len; j += i)
