@@ -52,7 +52,8 @@ int main() {
 
 /*
 Sieve of Eratosthenes algorithm. Returns boolean
-array in which all primes indicies are true.
+array where all prime indicies are true.
+Size of the array specified by caller. 
 */
 bool* sieve_erato(unsigned int sievelen) {
 	bool* primes = new bool[sievelen + 1];
