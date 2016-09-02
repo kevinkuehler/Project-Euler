@@ -3,7 +3,7 @@ Project Euler Problem 19
 Kevin Kuehler
 https://github.com/kevinkuehler/Project-Euler
 
-*****************************************************************************
+***********************************************************************************************************
 
 Prompt:
 You are given the following information, but you may prefer to do some research for yourself.
@@ -41,23 +41,23 @@ int main() {
 }
 
 /*
-	Returns 1 if the year is a leap year and 0 if not. 
+Returns 1 if the year is a leap year and 0 if not. 
 */
 int isLeapYear(int year) {
 	return (!(year % 100) ? !(year%400) : !(year%4));
 }
 
 
-int months[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 /*
-	Returns the days in each month, leap years accounted for. 
+Returns the days in each month, leap years accounted for. 
 */
+int months[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 int getMonthLength(int month, int year) {
 	return (month == 2) ? months[month - 1] + isLeapYear(year) : months[month - 1];
 }
 
 /*
-	Returns the day of the week the next month starts on.
+Returns the day of the week the next month starts on.
 */
 int nextMonthStartDay(int startday, int month, int year) {
 	return (startday + getMonthLength(month,year)) % 7;
