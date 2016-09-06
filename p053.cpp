@@ -37,7 +37,7 @@ int main() {
     int total = 0;
     for(int n = 100; n > 22; n--) {
 
-        int rH = n - 1, rL = -1;
+        int rH = n-1, rL = -1;
 
         while(comb(--rH,n) < L+1) { }
         while(comb(++rL,n) < L+1) { }
