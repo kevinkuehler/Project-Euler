@@ -27,7 +27,6 @@ inline bool isalphalower(char c) {
 }
 
 int main() {
-
     /* Reads file into vector */
     ifstream file;
     file.open("p059_cipher.txt");
