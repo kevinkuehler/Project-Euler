@@ -1,6 +1,6 @@
 # Project-Euler
 
-Solutions are in C++ and, at a minimum, require a C++11 compiler. All files run on their own (no class dependencies). I chose to do this because I assume most vistors will look to reference runnable code for one specific problem, and my aim is to make that as easy as possible. Let me know if you would prefer a library class. 
+Solutions are in C++ and in Python. The C++ code is written for a C++11(+) compiler, and the Python code requires a Python 3.5.x interpreter. All files run on their own (no class dependencies). I chose to do this because I assume most vistors will look to reference runnable code for one specific problem, and my aim is to make that as easy as possible. Let me know if you would prefer a library class. 
 
 Collection of my solutions to problems from https://projecteuler.net/archives.
 
