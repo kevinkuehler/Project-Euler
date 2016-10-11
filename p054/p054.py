@@ -29,6 +29,5 @@ def hand_rank(hand):
 		return freq, straight + flush*37
 	return freq, max(10*freq[0][1] + 4*freq[1][1], flush*37)		
 
-f = open('p054_poker.txt', 'r')
-print (sum(poker(line.split()) for line in f))
-f.close()
+with open('p054_poker.txt') as f:
+    print(sum(poker(line.split()) for line in f ))
