@@ -15,19 +15,19 @@ def card_value(x):
     return {'T': 10,'J': 11,'Q': 12,'K': 13,'A': 14}.get(x,ord(x)-48)
 
 def hand_rank(hand):
-	occur = defaultdict(int)
+	freq = defaultdict(int)
 	flush = True
 	flush_type = hand[0][1]
 	for card in hand:
 		if flush: flush = flush_type == card[1]
-		occur[card_value(card[0])] += 1
-	occur = sorted(occur.items(), key=lambda t: (t[1], t[0]), reverse=True)
-	if len(occur) == 5:
-		straight = (occur[0][0] - occur[-1][0] == 4)*36
+		freq[card_value(card[0])] += 1
+	freq = sorted(freq.items(), key=lambda t: (t[1], t[0]), reverse=True)
+	if len(freq) == 5:
+		straight = (freq[0][0] - freq[-1][0] == 4)*36
 		if not straight: # ace wraps
-			straight = (occur[-1][0] == 2 and occur[1][0] == 5 and occur[0][0] == 14)*35
-		return occur, straight + flush*37
-	return occur, max(10*occur[0][1] + 4*occur[1][1], flush*37)		
+			straight = (freq[-1][0] == 2 and freq[1][0] == 5 and freq[0][0] == 14)*35
+		return freq, straight + flush*37
+	return freq, max(10*freq[0][1] + 4*freq[1][1], flush*37)		
 
 f = open('p054_poker.txt', 'r')
 print (sum(poker(line.split()) for line in f))
