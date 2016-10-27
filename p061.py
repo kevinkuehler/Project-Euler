@@ -36,7 +36,7 @@ def find_cycle(n, group, list, index):
 	next = (n % 100)*100
 	if next < 10: return 0 # avoid useless compares
 	val = 0 # for recursion retrn
-	for i in range(100):
+	for i in range(10,100):
 		t = next + i
 		for j in range(5):
 			if binary_search(figurates[j],t) != -1:
