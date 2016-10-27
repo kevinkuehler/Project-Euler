@@ -44,6 +44,7 @@ def find_cycle(n, group, list, index):
 				if val != 0: return val # found
 	return val
 
+# Generates cycles using the octagonal numbers b/t 1 and 10 thousand. 
 def Main():
 	found = [(None,None)]*6 
 	result = 0
