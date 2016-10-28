@@ -8,8 +8,8 @@ from collections import defaultdict
 
 # orders a number n from largest digit to smallest
 def max_perm(n):
-	list =  sorted([int(i) for i in str(n)], reverse=True)
-	return int(''.join(str(i) for i in list))
+	list =  sorted([i for i in str(n)], reverse=True)
+	return int(''.join(list))
 
 def main():
 	cubes = defaultdict(int)
