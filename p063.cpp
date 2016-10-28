@@ -11,7 +11,8 @@
 
 using namespace std;
 
-/* Uses the fact that ceil(log10(n)) gives 
+/* 
+* Uses the fact that ceil(log10(n)) gives 
 * us the digits in some number n -- therefore 
 * log10(n^p) is written as plog10(n).
 */
@@ -21,7 +22,8 @@ int digit_pow(int n) {
 	return p - 1; 
 }
 
-/* Upper bound is 10 because 10^1 has 2 digits, 
+/* 
+* Upper bound is 10 because 10^1 has 2 digits, 
 * and this pattern becomes more pronounced as 
 * the base increases. 
 */
