@@ -28,10 +28,10 @@ int digit_pow(int n) {
 * the base increases. 
 */
 int main() {
-	int count = 0;
+	int count = 1;
 	for(int i = 2; i < 10; i++) 
 		count += digit_pow(i);
-	cout << count + 1 << endl;
+	cout << count << endl;
 	return 0; 
 }
 
