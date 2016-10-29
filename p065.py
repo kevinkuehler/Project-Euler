@@ -13,7 +13,7 @@
 # of e is an even number 2k, where k = s/3.
 # We add this number to our fraction and
 # swap num and denom since they are over one,
-# In B.C. the fraction is added to 2 and returned
+# In B.C. the fraction is added to 2.
 def e_convergent(num, denom, seq):
 	if seq == 1:
 		return int(2*denom + num)
