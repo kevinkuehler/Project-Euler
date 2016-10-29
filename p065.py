@@ -6,7 +6,7 @@
 #
 
 
-# pass: num, denom of nth convergent, n-1
+# pass: num and denom of nth convergent, n-1
 # returns: num of nth convergent for e
 #
 # Uses the fact that every third sequence 
