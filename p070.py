@@ -37,7 +37,7 @@ def main():
 				if i * j > l: break
 				if sieve[j]:
 					n, n_totient = i * j, (i - 1) * (j - 1)
-					if n < l + 1 and is_perm(n, n_totient):
+					if is_perm(n, n_totient):
 						x = min(x, (n / n_totient, n))		
 	print(x[1])
 
