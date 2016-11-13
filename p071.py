@@ -5,7 +5,7 @@
 # https://projecteuler.net/problem=71
 #
 
-from fractions import gcd
+#####################################################
 
 # We know the neighbors a/b < c/d in a Farey sequence
 # have a difference of 1/(bd). We are also given 
