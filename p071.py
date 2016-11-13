@@ -8,8 +8,8 @@
 from fractions import gcd
 
 # We know the neighbors a/b < c/d in a Farey sequence
-# have a difference of 1 / (bd). We are also given 
-# c/d = 3/7, therefore 3/7-a/b = 1 / (7b)
+# have a difference of 1/(bd). We are also given 
+# c/d = 3/7, therefore 3/7-a/b = 1/(7b)
 # => a = (3b-1)/7, such that a is an integer, and
 # b <= L = 1,000,000 (largest denominator = set size)
 def main():
