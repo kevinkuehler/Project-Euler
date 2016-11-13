@@ -6,7 +6,7 @@
 #
 
 def coprime(len):
-	phi = [1]*(len+1)
+	phi = [1] * (len+1)
 
 	for i in range(2,len+1):
 		if phi[i] == 1:
